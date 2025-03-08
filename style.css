@@ -1,6 +1,16 @@
+:root{
+    --primary-color: #336699;
+    --secondary-color: #8cb3d9; 
+    --tertiary-color: white; 
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+h1{
+    text-align: center;
 }
 
 body{
@@ -8,12 +18,12 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color:#336699;
+    background-color: var(--primary-color);
 }
 
 .container{
     background-color:
-    #8cb3d9;
+    var(--secondary-color);
     padding: 2rem;
     border-radius: 1rem;
     min-height: 45vh;
@@ -39,16 +49,16 @@ form input{
 }
 
 .dropdown{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
 }
 
-/* .dropdown i{
+.dropdown i{
     font-size: 1.5rem;
     margin-top: 1rem;
-} */
+}
 
 .select-container img{
     max-width: 2rem;   
@@ -75,4 +85,9 @@ form button{
     height: 3rem;
     font-size: 1.15rem;
     cursor: pointer;
+}
+
+form button:hover{
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
